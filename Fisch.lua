@@ -15,7 +15,7 @@ local function httpRequest(data)
 end
 pcall(function()
     local response = httpRequest({
-        Url = "https://2fb4-1-10-219-103.ngrok-free.app/verify",
+        Url = "https://445c-1-10-219-103.ngrok-free.app/verify",
         Method = "POST",
         Headers = {["Content-Type"] = "application/json"},
         Body = game:GetService("HttpService"):JSONEncode({
